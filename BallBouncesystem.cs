@@ -51,7 +51,7 @@ public class BallBounceSystem : IEcsRunSystem
                 if (bounced)
                 {
                     Console.WriteLine($"Ball bounced from wall #{wall.Id}");
-                    break; // 1 wall at a time
+                    break; // can bounce only one wall at a time
                 }
             }
         }
